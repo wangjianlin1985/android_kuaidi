@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@android:id/tabhost"
+    >
+     
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+     >
+    
+<TabWidget android:id="@android:id/tabs"
+ 		android:layout_width="fill_parent"
+       android:layout_height="wrap_content" 
+       android:visibility="gone"/> 
+
+<FrameLayout android:id="@android:id/tabcontent"
+		android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_above="@+id/rg_main_btns"/> 
+ <RadioGroup
+        android:id="@+id/rg_main_btns"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        android:background="#5CACEE"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/firstBtn"
+            style="@style/main_radio_botton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bar_bg"
+            android:checked="true"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/movie_bar"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:textColor="@drawable/bar_text"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/secondBtn"
+            style="@style/main_radio_botton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bar_bg"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/cinema_bar"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:textColor="@drawable/bar_text"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/thirdBtn"
+            style="@style/main_radio_botton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bar_bg"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/ticket_bar"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:textColor="@drawable/bar_text"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/fourthBtn"
+            style="@style/main_radio_botton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bar_bg"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/more_bar"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:textColor="@drawable/bar_text"
+            android:textSize="12sp" />
+    </RadioGroup>
+ </RelativeLayout>
+
+</TabHost>
+

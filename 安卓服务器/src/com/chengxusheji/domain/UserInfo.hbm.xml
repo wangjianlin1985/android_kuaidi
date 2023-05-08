@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.chengxusheji.domain">
+
+	<class name="UserInfo" table="UserInfo">
+
+          <!-- 主键用户名 -->
+          <id name="user_name" type="string" length="20">
+            <generator class="assigned"/>
+          </id>
+
+          <!-- 简单字符串属性: 登录密码 -->
+          <property
+            name="password"
+            column="password"
+            type="string"
+            length="30"
+          />
+
+          <!-- 简单字符串属性: 用户类型 -->
+          <property
+            name="userType"
+            column="userType"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 姓名 -->
+          <property
+            name="name"
+            column="name"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 性别 -->
+          <property
+            name="gender"
+            column="gender"
+            type="string"
+            length="4"
+          />
+
+          <!-- 简单日期型属性: 出生日期 -->
+          <property
+            name="birthDate"
+            column="birthDate"
+            	type="timestamp"
+            	length="10"
+          />
+
+          <!-- 简单图片属性: 用户照片 -->
+          <property
+            name="userPhoto"
+            column="userPhoto"
+            type="string"
+            length="50"
+          />
+
+          <!-- 简单字符串属性: 联系电话 -->
+          <property
+            name="telephone"
+            column="telephone"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 邮箱 -->
+          <property
+            name="email"
+            column="email"
+            type="string"
+            length="50"
+          />
+
+          <!-- 简单字符串属性: 家庭地址 -->
+          <property
+            name="address"
+            column="address"
+            type="string"
+            length="80"
+          />
+
+          <!-- 简单图片属性: 认证文件 -->
+          <property
+            name="authFile"
+            column="authFile"
+            type="string"
+            length="50"
+          />
+
+          <!-- 简单字符串属性: 审核状态 -->
+          <property
+            name="shenHeState"
+            column="shenHeState"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 注册时间 -->
+          <property
+            name="regTime"
+            column="regTime"
+            type="string"
+            length="30"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 

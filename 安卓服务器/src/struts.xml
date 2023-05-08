@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+     <constant name="struts.i18n.encoding" value="gbk"/>
+     <constant name="struts.devMode" value="true" />
+     <!--Struts2中Action对象的创建交给spring完成-->
+     <constant name="struts.objectFactory" value="spring" />   
+       
+          
+	 <package name="login" namespace="/login" extends="struts-default">
+	        <action name="login_*" class="loginAction" method="{1}">
+	        	<result name="main_view">/main.jsp</result>
+	        	<result name="error">/error.jsp</result>
+	        	<result name="input">/login.jsp</result> 
+	        	<result name="login_view">/login.jsp</result>
+	          
+	        </action>  
+	 </package>
+	 
+         <!-- UserInfoAction配置 -->
+         <package name="UserInfo" namespace="/UserInfo" extends="struts-default">
+           <action name="UserInfo_*" class="userInfoAction" method="{1}">
+             <result name="add_view">/UserInfo_add.jsp</result>
+             <result name="input">/UserInfo_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/UserInfo_query_result.jsp</result>
+             <result name="front_query_view">/UserInfo_frontquery_result.jsp</result>
+             <result name="front_show_view">/UserInfo_frontshow.jsp</result>
+             <result name="modify_view">/UserInfo_modify.jsp</result>
+           </action>
+         </package>
+
+         <!-- ExpressTakeAction配置 -->
+         <package name="ExpressTake" namespace="/ExpressTake" extends="struts-default">
+           <action name="ExpressTake_*" class="expressTakeAction" method="{1}">
+             <result name="add_view">/ExpressTake_add.jsp</result>
+             <result name="input">/ExpressTake_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/ExpressTake_query_result.jsp</result>
+             <result name="front_query_view">/ExpressTake_frontquery_result.jsp</result>
+             <result name="front_show_view">/ExpressTake_frontshow.jsp</result>
+             <result name="modify_view">/ExpressTake_modify.jsp</result>
+           </action>
+         </package>
+
+         <!-- CompanyAction配置 -->
+         <package name="Company" namespace="/Company" extends="struts-default">
+           <action name="Company_*" class="companyAction" method="{1}">
+             <result name="add_view">/Company_add.jsp</result>
+             <result name="input">/Company_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/Company_query_result.jsp</result>
+             <result name="front_query_view">/Company_frontquery_result.jsp</result>
+             <result name="front_show_view">/Company_frontshow.jsp</result>
+             <result name="modify_view">/Company_modify.jsp</result>
+           </action>
+         </package>
+
+         <!-- OrderStateAction配置 -->
+         <package name="OrderState" namespace="/OrderState" extends="struts-default">
+           <action name="OrderState_*" class="orderStateAction" method="{1}">
+             <result name="add_view">/OrderState_add.jsp</result>
+             <result name="input">/OrderState_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/OrderState_query_result.jsp</result>
+             <result name="front_query_view">/OrderState_frontquery_result.jsp</result>
+             <result name="front_show_view">/OrderState_frontshow.jsp</result>
+             <result name="modify_view">/OrderState_modify.jsp</result>
+           </action>
+         </package>
+
+         <!-- TakeOrderAction配置 -->
+         <package name="TakeOrder" namespace="/TakeOrder" extends="struts-default">
+           <action name="TakeOrder_*" class="takeOrderAction" method="{1}">
+             <result name="add_view">/TakeOrder_add.jsp</result>
+             <result name="input">/TakeOrder_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/TakeOrder_query_result.jsp</result>
+             <result name="front_query_view">/TakeOrder_frontquery_result.jsp</result>
+             <result name="front_show_view">/TakeOrder_frontshow.jsp</result>
+             <result name="modify_view">/TakeOrder_modify.jsp</result>
+           </action>
+         </package>
+
+         <!-- NoticeAction配置 -->
+         <package name="Notice" namespace="/Notice" extends="struts-default">
+           <action name="Notice_*" class="noticeAction" method="{1}">
+             <result name="add_view">/Notice_add.jsp</result>
+             <result name="input">/Notice_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/Notice_query_result.jsp</result>
+             <result name="front_query_view">/Notice_frontquery_result.jsp</result>
+             <result name="front_show_view">/Notice_frontshow.jsp</result>
+             <result name="modify_view">/Notice_modify.jsp</result>
+           </action>
+         </package>
+
+
+	 
+	 
+
+ 	 <package name="password" namespace="/password" extends="struts-default">
+	        <action name="ChangePassword" class="changePasswordAction">  
+	        	<result name="change_success">/message.jsp</result>
+	        	<result name="error">/error.jsp</result> 
+	        </action>  
+	 </package> 
+	  
+	 <package name="User" namespace="/User" extends="struts-default">
+	        <action name="User_*" class="com.chengxusheji.action.UserAction" method="{1}">  
+	        	<result name="user_query_view">/user_query_result.jsp</result>
+	        	<result name="success">/message.jsp</result>
+	        	<result name="error">/error.jsp</result> 
+	        </action>  
+	 </package>  
+	 
+</struts>

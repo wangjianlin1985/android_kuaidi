@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.chengxusheji.domain">
+
+	<class name="Notice" table="Notice">
+
+          <!-- 主键公告id -->
+          <id name="noticeId" column="noticeId">
+            <generator class="native"/>
+          </id>
+
+          <!-- 简单字符串属性: 标题 -->
+          <property
+            name="title"
+            column="title"
+            type="string"
+            length="80"
+          />
+
+          <!-- 简单字符串属性: 公告内容 -->
+          <property
+            name="content"
+            column="content"
+            type="string"
+            length="5000"
+          />
+
+          <!-- 简单字符串属性: 发布时间 -->
+          <property
+            name="publishDate"
+            column="publishDate"
+            type="string"
+            length="30"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 

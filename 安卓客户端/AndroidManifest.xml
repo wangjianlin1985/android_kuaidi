@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobileclient.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+         android:targetSdkVersion="8"
+         /> 
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:name="com.mobileclient.app.Declare">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="MainActivity"></activity>
+        <activity android:name="MoreActivity"></activity>
+        <activity android:name="AboutActivity"></activity>
+        <activity android:name="RegisterActivity"></activity>
+        <activity android:name="MainMenuActivity"></activity>
+        <activity android:name="UserInfoListActivity"></activity>
+        <activity android:name="UserInfoQueryActivity"></activity>
+        <activity android:name="UserInfoAddActivity"></activity>
+        <activity android:name="UserInfoEditActivity"></activity>
+        <activity android:name="UserInfoDetailActivity"></activity>
+        <activity android:name="ExpressTakeListActivity"></activity>
+        <activity android:name="ExpressTakeQueryActivity"></activity>
+        <activity android:name="ExpressTakeAddActivity"></activity>
+        <activity android:name="ExpressTakeEditActivity"></activity>
+        <activity android:name="ExpressTakeDetailActivity"></activity>
+        <activity android:name="CompanyListActivity"></activity>
+        <activity android:name="CompanyQueryActivity"></activity>
+        <activity android:name="CompanyAddActivity"></activity>
+        <activity android:name="CompanyEditActivity"></activity>
+        <activity android:name="CompanyDetailActivity"></activity>
+        <activity android:name="OrderStateListActivity"></activity>
+        <activity android:name="OrderStateQueryActivity"></activity>
+        <activity android:name="OrderStateAddActivity"></activity>
+        <activity android:name="OrderStateEditActivity"></activity>
+        <activity android:name="OrderStateDetailActivity"></activity>
+        <activity android:name="TakeOrderListActivity"></activity>
+        <activity android:name="TakeOrderQueryActivity"></activity>
+        <activity android:name="TakeOrderAddActivity"></activity>
+        <activity android:name="TakeOrderEditActivity"></activity>
+        <activity android:name="TakeOrderDetailActivity"></activity>
+        <activity android:name="NoticeListActivity"></activity>
+        <activity android:name="NoticeQueryActivity"></activity>
+        <activity android:name="NoticeAddActivity"></activity>
+        <activity android:name="NoticeEditActivity"></activity>
+        <activity android:name="NoticeDetailActivity"></activity>
+
+        <activity android:name="photoListActivity"></activity>
+        <activity android:name="fileListActivity"></activity>
+    </application>
+
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+
+	<!-- 文件读写权限 -->
+	
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"></uses-permission>
+	
+	
+</manifest>

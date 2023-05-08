@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F4F4"
+        android:padding="10dip" >
+        <ImageView
+            android:id="@+id/iv_userPhoto"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/ml_default_image" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/iv_userPhoto"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_userType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_birthDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_shenHeState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+

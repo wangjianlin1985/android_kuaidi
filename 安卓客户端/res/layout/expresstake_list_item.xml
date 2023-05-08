@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F4F4"
+        android:padding="10dip" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/tv_taskTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_companyObj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_waybill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_receiverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_receiveMemo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_takePlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_giveMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_takeStateObj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_userObj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_addTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+

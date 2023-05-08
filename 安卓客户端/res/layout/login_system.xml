@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/login"
+	>
+	
+	<TableLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:stretchColumns="1">
+	
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			
+	
+		<TableRow>
+			<TextView 
+			android:text="          用户名：" 
+			android:id="@+id/TextView"
+			android:layout_width="70dp" 
+			android:layout_height="wrap_content"
+			android:textColor="#0000ff" 
+			/>
+			
+			<EditText 
+			android:text="" 
+			android:id="@+id/userEditText"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			/>
+		</TableRow>
+
+
+		<TableRow>
+			<TextView 
+			android:text="          密码：" 
+			android:id="@+id/TextView"
+			android:layout_width="70dp" 
+			android:layout_height="wrap_content"
+			android:textColor="#0000ff"
+			/>
+			
+			<EditText 
+			android:text="" 
+			android:id="@+id/pwdEditText"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:password="true"/>
+			
+		</TableRow>
+		
+		<TableRow 
+			android:gravity="right">
+				<Button 
+				android:text="登入" 
+				android:id="@+id/loginButton"
+				android:layout_height="wrap_content" 
+				android:layout_width="160dp"/>
+	
+			<Button 
+				android:text="重填" 
+				android:id="@+id/cancelButton"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/> 
+			
+	 </TableRow> 
+	 
+	 <TableRow  android:gravity="right">
+			<Button 
+				android:text="注册" 
+				android:id="@+id/registerButton"
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"
+				android:visibility="gone"
+				/>
+	
+			<Button 
+				android:text="退出" 
+				android:id="@+id/exitButton"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:visibility="gone"/>
+	</TableRow>
+
+	 
+	  
+	    <TextView 
+			android:text="程序设计:双鱼林    QQ:287307421或254540457" 
+			android:id="@+id/TextView"
+			android:layout_width="70dp" 
+			android:layout_height="wrap_content"
+			android:textColor="#ff0000" 
+			android:gravity="center_horizontal"
+		/>
+	    
+	     <TextView 
+			android:text="网站:http://www.shuangyulin.com" 
+			android:id="@+id/TextView"
+			android:layout_width="70dp" 
+			android:layout_height="wrap_content"
+			android:textColor="#ff0000" 
+			android:gravity="center_horizontal"
+		/>
+	     
+	    
+	</TableLayout>
+</LinearLayout>

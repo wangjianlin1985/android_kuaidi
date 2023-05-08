@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E2E2"
+    android:orientation="vertical" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/web_title_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="48dip"
+    android:background="#D64F4D"
+     >
+
+		<TextView
+		        android:id="@+id/title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+	        android:gravity="center"
+	        android:singleLine="true"
+	        android:textColor="#FFFFFF"
+	        android:textSize="20sp" />
+	
+	    <ImageView
+	        android:id="@+id/back_btn"
+	        android:layout_width="48dip"
+	        android:layout_height="48dip"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/buttons"
+	        android:src="@drawable/btn_left_normal"
+	        android:padding="5dip"
+	        android:textColor="#888888"
+	        android:textSize="14sp"
+	        android:onClick="back" />
+	    <ImageView 
+	        android:id="@+id/search"
+		    android:layout_width="48dip"
+		    android:layout_height="48dip"
+		    android:padding="10dip"
+		    android:layout_alignParentRight="true"
+		    android:scaleType="fitXY"
+		    android:src="@drawable/search"
+		    android:layout_centerVertical="true"
+		    android:background="@drawable/buttons"
+		    />	
+	</RelativeLayout>	
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dip" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:text="安卓客户端V1.0"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:cacheColorHint="@color/transparent" />
+
+        <TextView
+            android:id="@+id/unlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="40dip"
+            android:onClick="changePass"
+            android:text="本软件是一款安卓客户端软件"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

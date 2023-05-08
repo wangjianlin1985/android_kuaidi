@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.chengxusheji.domain">
+
+	<class name="ExpressTake" table="ExpressTake">
+
+          <!-- 主键订单id -->
+          <id name="orderId" column="orderId">
+            <generator class="native"/>
+          </id>
+
+          <!-- 简单字符串属性: 代拿任务 -->
+          <property
+            name="taskTitle"
+            column="taskTitle"
+            type="string"
+            length="50"
+          />
+
+          <!-- 多对一属性: 物流公司 -->
+          <many-to-one name="companyObj"
+            column="companyObj"
+            class="Company"
+            lazy="false"
+            outer-join="true"
+            cascade="save-update"
+          />
+
+          <!-- 简单字符串属性: 运单号码 -->
+          <property
+            name="waybill"
+            column="waybill"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 收货人 -->
+          <property
+            name="receiverName"
+            column="receiverName"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 收货电话 -->
+          <property
+            name="telephone"
+            column="telephone"
+            type="string"
+            length="30"
+          />
+
+          <!-- 简单字符串属性: 收货备注 -->
+          <property
+            name="receiveMemo"
+            column="receiveMemo"
+            type="string"
+            length="500"
+          />
+
+          <!-- 简单字符串属性: 送达地址 -->
+          <property
+            name="takePlace"
+            column="takePlace"
+            type="string"
+            length="80"
+          />
+
+          <!-- 简单浮点型属性: 代拿报酬 -->
+          <property
+            name="giveMoney"
+            column="giveMoney"
+            type="float"
+          />
+
+          <!-- 简单字符串属性: 代拿状态 -->
+          <property
+            name="takeStateObj"
+            column="takeStateObj"
+            type="string"
+            length="30"
+          />
+
+          <!-- 多对一属性: 任务发布人 -->
+          <many-to-one name="userObj"
+            column="userObj"
+            class="UserInfo"
+            lazy="false"
+            outer-join="true"
+            cascade="save-update"
+          />
+
+          <!-- 简单字符串属性: 发布时间 -->
+          <property
+            name="addTime"
+            column="addTime"
+            type="string"
+            length="20"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 

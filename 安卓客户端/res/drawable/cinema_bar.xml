@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/cinema_p" android:state_enabled="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/cinema_p" android:state_checked="true" />
+    <item android:drawable="@drawable/cinema_n" android:state_checked="false" />
+    <item android:drawable="@drawable/cinema_n"/>
+
+</selector>

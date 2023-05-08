@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.chengxusheji.domain">
+
+	<class name="TakeOrder" table="TakeOrder">
+
+          <!-- 主键订单id -->
+          <id name="orderId" column="orderId">
+            <generator class="native"/>
+          </id>
+
+          <!-- 多对一属性: 代拿的快递 -->
+          <many-to-one name="expressTakeObj"
+            column="expressTakeObj"
+            class="ExpressTake"
+            lazy="false"
+            outer-join="true"
+            cascade="save-update"
+          />
+
+          <!-- 多对一属性: 接任务人 -->
+          <many-to-one name="userObj"
+            column="userObj"
+            class="UserInfo"
+            lazy="false"
+            outer-join="true"
+            cascade="save-update"
+          />
+
+          <!-- 简单字符串属性: 接单时间 -->
+          <property
+            name="takeTime"
+            column="takeTime"
+            type="string"
+            length="20"
+          />
+
+          <!-- 多对一属性: 订单状态 -->
+          <many-to-one name="orderStateObj"
+            column="orderStateObj"
+            class="OrderState"
+            lazy="false"
+            outer-join="true"
+            cascade="save-update"
+          />
+
+          <!-- 简单字符串属性: 实时动态 -->
+          <property
+            name="ssdt"
+            column="ssdt"
+            type="string"
+            length="500"
+          />
+
+          <!-- 简单字符串属性: 用户评价 -->
+          <property
+            name="evaluate"
+            column="evaluate"
+            type="string"
+            length="60"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 

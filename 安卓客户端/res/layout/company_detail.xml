@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+<include layout="@layout/title" />
+<ScrollView
+ android:layout_width="fill_parent" 
+ android:layout_height="fill_parent">
+<LinearLayout 
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	 android:background="@android:color/white">
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:stretchColumns="1">
+	    <TableRow> 
+			<TextView 
+				android:text="公司id：" 
+				android:id="@+id/TextView"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:textColor="#0000ff" 
+			/>
+			<TextView
+				android:text="" 
+				android:id="@+id/TV_companyId" 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			/>
+		</TableRow>
+	    <TableRow>
+			<TextView
+				android:text="公司名称：" 
+				android:id="@+id/TV_companyName_Label"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:textColor="#0000ff"
+			/>
+			<TextView
+				android:text="" 
+				android:id="@+id/TV_companyName" 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			/>
+		</TableRow>
+	</TableLayout>
+	<LinearLayout 
+		android:orientation="vertical" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"> 
+		   <Button
+		       android:text="返回"
+		       android:id="@+id/btnReturn"
+		       android:layout_width="match_parent"
+		       android:layout_height="48dp"
+		       android:layout_marginLeft="10dip"
+		       android:layout_marginRight="10dip"
+		       android:layout_marginTop="20dip"
+		       android:background="#1ab394"
+		       android:textColor="@color/white" />
+	</LinearLayout>
+  </LinearLayout>
+</ScrollView>
+</LinearLayout>
+
+

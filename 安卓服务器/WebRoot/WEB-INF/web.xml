@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	
+	
+	<!-- 指定spring的配置文件，默认从web根目录寻找配置文件，我们可以通过spring提供的classpath:前缀指定从类路径下寻找 -->
+	<context-param>
+	   <param-name>contextConfigLocation</param-name>
+	   <param-value>classpath:beans.xml</param-value>
+	</context-param>
+	
+	
+	<!-- 对Spring容器进行实例化 -->
+	<listener>
+	      <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
+	
+	<!-- struts启用配置 -->
+	<filter>
+	      <filter-name>struts2</filter-name> 
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>*.action</url-pattern>
+    </filter-mapping>
+    
+    
+    <!-- 登录验证servlet配置 -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.mobileserver.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+      
+    <!-- 用户注册servlet配置 -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.mobileserver.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- 上传图片servlet配置 -->
+    <servlet>
+        <servlet-name>UpPhotoServlet</servlet-name>
+        <servlet-class>com.mobileserver.servlet.UpPhotoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpPhotoServlet</servlet-name>
+        <url-pattern>/UpPhotoServlet</url-pattern>
+    </servlet-mapping> 
+    
+    <!-- 用户管理servlet配置 -->
+    <servlet>
+        <servlet-name>UserInfoServlet</servlet-name>
+        <servlet-class>com.mobileserver.servlet.UserInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserInfoServlet</servlet-name>
+        <url-pattern>/UserInfoServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 快递代拿管理servlet配置 -->
+    <servlet>
+        <servlet-name>ExpressTakeServlet</servlet-name>
+        <servlet-class>com.mobileserver.servlet.ExpressTakeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExpressTakeServlet</servlet-name>
+        <url-pattern>/ExpressTakeServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 物流公司管理servlet配置 -->
+    <servlet>
+        <servlet-name>CompanyServlet</servlet-name>
+        <servlet-class>com.mobileserver.servlet.CompanyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CompanyServlet</servlet-name>
+        <url-pattern>/CompanyServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 订单状态管理servlet配置 -->
+    <servlet>
+        <servlet-name>OrderStateServlet</servlet-name>
+        <servlet-class>com.mobileserver.servlet.OrderStateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderStateServlet</servlet-name>
+        <url-pattern>/OrderStateServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 代拿订单管理servlet配置 -->
+    <servlet>
+        <servlet-name>TakeOrderServlet</servlet-name>
+        <servlet-class>com.mobileserver.servlet.TakeOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TakeOrderServlet</servlet-name>
+        <url-pattern>/TakeOrderServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 新闻公告管理servlet配置 -->
+    <servlet>
+        <servlet-name>NoticeServlet</servlet-name>
+        <servlet-class>com.mobileserver.servlet.NoticeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NoticeServlet</servlet-name>
+        <url-pattern>/NoticeServlet</url-pattern>
+    </servlet-mapping>
+
+ 
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

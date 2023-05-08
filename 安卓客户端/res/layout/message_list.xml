@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout  
+  xmlns:android="http://schemas.android.com/apk/res/android"  
+  android:layout_width="match_parent"  
+  android:layout_height="match_parent">  
+    <ImageView android:id="@+id/ml_icon"  
+        android:layout_width="50dp"  
+        android:layout_height="58dp"  
+        android:src="@drawable/ml_default_image"  
+        />  
+    <LinearLayout  
+      xmlns:android="http://schemas.android.com/apk/res/android"  
+      android:orientation="vertical"  
+      android:layout_width="match_parent"  
+      android:layout_height="58dp"  
+      android:layout_weight="1">  
+      <TextView android:id="@+id/ml_title"  
+        android:layout_width="fill_parent"  
+        android:layout_height="25dp"  
+        android:textStyle="bold"  
+        android:textSize="20dp"  
+        />  
+      <TextView android:id="@+id/ml_short_content"  
+        android:layout_width="fill_parent"  
+        android:layout_height="35dp"  
+        />  
+    </LinearLayout>  
+    <TextView  
+        android:layout_width="30dp"  
+        android:layout_height="58dp"  
+        android:text=">"  
+        android:textSize="26dp"  
+        android:layout_gravity="right"  
+        android:gravity="center"  
+        />  
+</LinearLayout>  

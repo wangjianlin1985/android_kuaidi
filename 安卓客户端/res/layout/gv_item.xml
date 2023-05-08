@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<!--
+
+		a) LinearLayout i. 高：wrap_content ii. 宽：90px iii. 布局方向：垂直 iv.
+		设置里面的控件的位置为中间 v. ImageView 1. 设置id为gv_item_icon 2. 宽高都为64px vi.
+		TextView 1. 设置id为gv_item_appname 2. 宽高都为wrap_content 3. 设置为2行 4.
+		字体大小16px 5. 颜色#FFF
+	-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="90px"
+	android:layout_height="wrap_content" android:gravity="center">
+
+	<ImageView android:id="@+id/gv_item_icon"
+		android:layout_width="64px" android:layout_height="64px">
+	</ImageView>
+	<TextView android:id="@+id/gv_item_appname"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:lines="2" android:textSize="16px" android:textColor="#000" />
+</LinearLayout>

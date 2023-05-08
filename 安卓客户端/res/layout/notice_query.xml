@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+ android:layout_width="fill_parent" 
+ android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android">  
+<LinearLayout 
+	android:orientation="vertical" 
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@android:color/white">
+	<include layout="@layout/title" />
+	<TableLayout
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:stretchColumns="1">
+		<TableRow> 
+			<TextView 
+				android:text="标题：" 
+				android:id="@+id/TV_title"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:textColor="#0000ff"/>
+			<EditText
+				android:text="" 
+				android:id="@+id/ET_title"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:ellipsize="end"/>
+		</TableRow>
+		<TableRow> 
+			<TextView 
+				android:text="发布时间：" 
+				android:id="@+id/TV_publishDate"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:textColor="#0000ff"/>
+			<EditText
+				android:text="" 
+				android:id="@+id/ET_publishDate"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:ellipsize="end"/>
+		</TableRow>
+	</TableLayout>
+	<LinearLayout 
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent"
+		android:layout_height="55dp" 
+		android:gravity="center">  
+		   <Button  
+				android:text="查询"
+				android:id="@+id/btnQuery"
+				android:layout_width="match_parent"
+				android:layout_height="48dp" 
+				android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip"
+				android:layout_marginTop="5dip"
+				android:background="#D64F4D"
+				android:textColor="@color/white" /> 
+	</LinearLayout>
+  </LinearLayout>
+</ScrollView>
+
+
+

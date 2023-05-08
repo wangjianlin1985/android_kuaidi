@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/login"
+	>
+	
+	<TableLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:stretchColumns="1">
+	
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			
+	
+		<TableRow>
+			<TextView 
+			android:text="用户名：" 
+			android:id="@+id/TextView"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textColor="#0000ff"
+			/>
+			
+			<EditText 
+			android:text="" 
+			android:id="@+id/userName"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"/>
+		</TableRow>
+
+
+		<TableRow>
+			<TextView 
+			android:text="密码：" 
+			android:id="@+id/TextView"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textColor="#0000ff"
+			/>
+			
+			<EditText 
+			android:text="" 
+			android:id="@+id/pwd"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:password="true"/>
+			
+		</TableRow>
+		
+		    <TableRow>
+			<TextView 
+			android:text="电话：" 
+			android:id="@+id/TextView1"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textColor="#0000ff"
+			/>
+			
+			<EditText 
+			android:text="" 
+			android:id="@+id/phone"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:password="true"/>
+			
+		</TableRow>
+		
+		        <TableRow>
+			<TextView 
+			android:text="地址：" 
+			android:id="@+id/TextView2"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textColor="#0000ff"
+			/>
+			
+			<EditText 
+			android:text="" 
+			android:id="@+id/address"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:password="true"/>
+			
+		</TableRow>
+		    
+		<TableRow 
+			android:gravity="right">
+				<Button 
+				android:text="确定" 
+				android:id="@+id/registerButton1"
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"/>
+	
+			<Button 
+				android:text="重置" 
+				android:id="@+id/registerButton2"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+		
+		</TableRow>
+
+	</TableLayout>
+</LinearLayout>
